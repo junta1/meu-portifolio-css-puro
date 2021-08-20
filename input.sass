@@ -1,0 +1,141 @@
+$blue-med: rgb(94, 94, 204)
+$blue-dark: rgb(42, 42, 196)
+$blue-light: rgb(158, 175, 252)
+$background-white: white
+$card-blue-light: #d2d2dd
+
+html
+    scroll-behavior: smooth
+    scroll-padding-top: 68px
+
+body
+    background: rgb(220, 218, 235)
+    margin: 0
+
+main
+    with: 1200px
+    margin: 0 auto
+    display: grid
+    column-gap: 10px
+    row-gap: 10px
+    grid-template-columns: (4, 1f)
+    grid-template-rows: auto
+    grid-template-areas: "main-title main-title main-title main-title" "about about about about" "quote quote quote quote" "job-exp job-exp education education" "skills extracurricular extracurricular extracurricular"
+
+    h1
+        grid-area: main-title
+        text-align: center
+
+header
+    position: sticky
+    top: 0
+    nav
+        background-color: $blue-med
+        display: flex
+        justify-content: space-evenly
+        padding: 20px
+        // z-index: 1
+        a
+            text-decoration: none
+            color: white
+#about
+    grid-area: about
+    display: flex
+    #about__photo
+        max-width: 200px
+        height: auto
+
+    #about__text-cnt
+        background-color: $background-white
+        padding: 50px
+
+#quote
+    grid-area: quote
+    background-color: $blue-dark
+    text-align: center
+    color: white
+    padding: 20px 0
+
+    #quote__cite
+        font-size: 1.5em
+
+#job-exp
+    grid-area: job-exp
+    padding: 10px
+    background-color: $background-white
+    text-align: center
+
+    #job-exp__experience
+        .job-exp__jobs
+            background-color: $card-blue-light
+            border-radius: 10px
+            text-align: center
+            padding: 5px
+
+            .job-exp__company-logo
+                max-width: 100px
+                height: auto
+
+        #job_exp__logo01
+            width: 150px
+            border-radius: 10px
+#education
+    grid-area: education
+    background-color: $background-white
+    padding: 10px
+
+#skills
+    grid-area: skills
+    background-color: $background-white
+    padding: 10px
+
+    h2
+        text-align: center
+    h3
+        margin: 0
+
+    #skills__full
+        display: grid
+        grid-template-columns: (3, 1f)
+        grid-template-rows: auto
+        grid-template-areas: "skills__back skills__front skills__others"
+
+        #skills__back
+            grid-area: skills__back
+        #skills__front
+            grid-area: skills__front
+        #skills__others
+            grid-area: skills__others
+
+#extracurricular
+    grid-area: extracurricular
+    background-color: $background-white
+    padding: 10px
+
+    #extracurricular__full
+        display: grid
+        grid-template-columns: (2, 1f)
+        grid-template-rows: auto
+        grid-template-areas: "extracurricular__curso01 extracurricular__curso02"
+
+footer
+    background-color: rgb(62, 62, 62)
+    color: white
+    padding: 10px
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+
+    #footer__social-medias
+        .footer__social-medias_icons
+            max-width: 40px
+            height: auto
+
+    #footer__email
+        p
+            margin: 0
+
+    // #footer__copyrights
+    //     p
+    //         align-self: flex-end 
