@@ -88,6 +88,9 @@ header nav a {
   background-color: white;
   padding: 10px;
 }
+#education h2 {
+  text-align: center;
+}
 
 #skills {
   grid-area: skills;
@@ -120,6 +123,9 @@ header nav a {
   grid-area: extracurricular;
   background-color: white;
   padding: 10px;
+}
+#extracurricular h2 {
+  text-align: center;
 }
 #extracurricular #extracurricular__full {
   display: grid;
