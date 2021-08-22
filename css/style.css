@@ -153,25 +153,29 @@ footer #footer__email p {
 }
 
 @media (max-width: 480px) {
+  html {
+    scroll-padding-top: 50px;
+  }
+
   header nav {
-    padding: 10px;
-    font-size: 10px;
+    padding: 14px;
+    font-size: 14px;
   }
 
   main {
-    width: 250px;
+    max-width: 300px;
     column-gap: 5px;
     row-gap: 10px;
     grid-template-columns: 1, 1f;
     grid-template-areas: "main-title" "about" "quote" "job-exp" "education" "skills" "extracurricular";
   }
   main h1 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   #about {
     flex-flow: column wrap;
-    font-size: 12px;
+    font-size: 14px;
     margin: 0 auto;
   }
   #about #about__photo {
@@ -180,64 +184,60 @@ footer #footer__email p {
     border-radius: 20px;
   }
   #about #about__text-cnt {
-    max-width: 200px;
+    max-width: 300px;
     max-height: auto;
     border-radius: 20px;
   }
 
   #quote {
     padding: 10px 0;
-    max-width: 250px;
-    margin: 0 auto;
+    max-width: 300px;
     border-radius: 20px;
   }
   #quote #quote__cite {
-    font-size: 15px;
+    font-size: 14px;
   }
   #quote p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   #job-exp {
-    max-width: 250px;
-    margin: 0 auto;
+    max-width: 300px;
     border-radius: 20px;
   }
   #job-exp h2 {
-    font-size: 15px;
+    font-size: 16px;
   }
   #job-exp #job-exp__experience {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   #education {
-    max-width: 250px;
-    margin: 0 auto;
+    max-width: 300px;
     border-radius: 20px;
   }
   #education h2 {
-    font-size: 15px;
+    font-size: 16px;
   }
   #education h3 {
     font-size: 14px;
   }
   #education ul {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   #skills {
-    max-width: 250px;
-    margin: 0 auto;
+    max-width: 300px;
     border-radius: 20px;
   }
   #skills h2 {
-    font-size: 15px;
+    font-size: 16px;
   }
   #skills h3 {
     font-size: 14px;
   }
   #skills ul {
-    font-size: 12px;
+    font-size: 14px;
   }
   #skills #skills__full {
     grid-template-columns: 1, 1f;
@@ -245,14 +245,14 @@ footer #footer__email p {
   }
 
   #extracurricular {
-    max-width: 250px;
+    max-width: 300px;
     margin: 0 auto;
     padding: 5px;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 20px;
   }
   #extracurricular h2 {
-    font-size: 15px;
+    font-size: 16px;
   }
   #extracurricular h3 {
     text-align: center;

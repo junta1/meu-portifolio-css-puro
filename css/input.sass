@@ -142,18 +142,22 @@ footer
             margin: 0
 
 $layout-breakpoint-small: 480px
-$width-max-small: 250px
-$font-size-small: 12px
-$font-size-title-smaill: 15px
+$width-max-small: 300px
+$font-size-small: 14px
+$font-size-title-small: 16px
+$font-size-sub-title-small: 15px
 
 @media (max-width: $layout-breakpoint-small)
 
+    html
+        scroll-padding-top: 50px
+
     header
         nav
-            padding: 10px
-            font-size: 10px
+            padding: 14px
+            font-size: 14px
     main
-        width: $width-max-small
+        max-width: $width-max-small
         column-gap: 5px
         row-gap: $row-gap
         grid-template-columns: (1, 1f)
@@ -173,38 +177,35 @@ $font-size-title-smaill: 15px
             border-radius: 20px
 
         #about__text-cnt
-            max-width: 200px
+            max-width: $width-max-small
             max-height: auto
             border-radius: 20px
 
     #quote
         padding: 10px 0
         max-width: $width-max-small
-        margin: 0 auto
         border-radius: 20px
 
         #quote__cite
-            font-size: $font-size-title-smaill
+            font-size: 14px
         p
             font-size: $font-size-small
 
     #job-exp
         max-width: $width-max-small
-        margin: 0 auto
         border-radius: 20px
 
         h2
-            font-size: $font-size-title-smaill
+            font-size: $font-size-title-small
         #job-exp__experience
             font-size: $font-size-small
 
     #education
         max-width: $width-max-small
-        margin: 0 auto
         border-radius: 20px
 
         h2
-            font-size: $font-size-title-smaill
+            font-size: $font-size-title-small
         h3
             font-size: 14px
         ul
@@ -212,11 +213,10 @@ $font-size-title-smaill: 15px
 
     #skills
         max-width: $width-max-small
-        margin: 0 auto
         border-radius: 20px
 
         h2
-            font-size: $font-size-title-smaill
+            font-size: $font-size-title-small
         h3
             font-size: 14px
         ul
@@ -227,14 +227,14 @@ $font-size-title-smaill: 15px
             grid-template-areas: "skills__back" "skills__front" "skills__others"
 
     #extracurricular
-        max-width: 250px
+        max-width: $width-max-small
         margin: 0 auto
         padding: 5px
         font-size: $font-size-small
         border-radius: 20px
 
         h2
-            font-size: $font-size-title-smaill
+            font-size: $font-size-title-small
         h3
             text-align: center
             font-size: 14px
@@ -248,4 +248,4 @@ $font-size-title-smaill: 15px
         flex-flow: column wrap
         align-items: center
         margin-top: $row-gap
-        font-size: $font-size-small
+        font-size: 12px
