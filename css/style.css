@@ -9,7 +9,7 @@ body {
 }
 
 main {
-  with: 1200px;
+  width: 1200px;
   margin: 0 auto;
   display: grid;
   column-gap: 10px;
@@ -18,7 +18,7 @@ main {
   grid-template-rows: auto;
   grid-template-areas: "main-title main-title main-title main-title" "about about about about" "quote quote quote quote" "job-exp job-exp education education" "skills extracurricular extracurricular extracurricular";
 }
-main h1 {
+main #main-title {
   grid-area: main-title;
   text-align: center;
 }
@@ -142,6 +142,7 @@ footer {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
 footer #footer__social-medias .footer__social-medias_icons {
   max-width: 40px;
@@ -149,6 +150,126 @@ footer #footer__social-medias .footer__social-medias_icons {
 }
 footer #footer__email p {
   margin: 0;
+}
+
+@media (max-width: 480px) {
+  header nav {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  main {
+    width: 250px;
+    column-gap: 5px;
+    row-gap: 10px;
+    grid-template-columns: 1, 1f;
+    grid-template-areas: "main-title" "about" "quote" "job-exp" "education" "skills" "extracurricular";
+  }
+  main h1 {
+    font-size: 12px;
+  }
+
+  #about {
+    flex-flow: column wrap;
+    font-size: 12px;
+    margin: 0 auto;
+  }
+  #about #about__photo {
+    max-width: 120px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  #about #about__text-cnt {
+    max-width: 200px;
+    max-height: auto;
+    border-radius: 20px;
+  }
+
+  #quote {
+    padding: 10px 0;
+    max-width: 250px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  #quote #quote__cite {
+    font-size: 15px;
+  }
+  #quote p {
+    font-size: 12px;
+  }
+
+  #job-exp {
+    max-width: 250px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  #job-exp h2 {
+    font-size: 15px;
+  }
+  #job-exp #job-exp__experience {
+    font-size: 12px;
+  }
+
+  #education {
+    max-width: 250px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  #education h2 {
+    font-size: 15px;
+  }
+  #education h3 {
+    font-size: 14px;
+  }
+  #education ul {
+    font-size: 12px;
+  }
+
+  #skills {
+    max-width: 250px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  #skills h2 {
+    font-size: 15px;
+  }
+  #skills h3 {
+    font-size: 14px;
+  }
+  #skills ul {
+    font-size: 12px;
+  }
+  #skills #skills__full {
+    grid-template-columns: 1, 1f;
+    grid-template-areas: "skills__back" "skills__front" "skills__others";
+  }
+
+  #extracurricular {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 20px;
+  }
+  #extracurricular h2 {
+    font-size: 15px;
+  }
+  #extracurricular h3 {
+    text-align: center;
+    font-size: 14px;
+  }
+  #extracurricular #extracurricular__full {
+    grid-template-columns: 1, 1f;
+    grid-template-areas: "extracurricular__curso01" "extracurricular__curso02";
+  }
+
+  footer {
+    padding: 5px;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

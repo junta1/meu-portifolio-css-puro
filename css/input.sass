@@ -3,6 +3,7 @@ $blue-dark: rgb(42, 42, 196)
 $blue-light: rgb(158, 175, 252)
 $background-white: white
 $card-blue-light: #d2d2dd
+$row-gap: 10px
 
 html
     scroll-behavior: smooth
@@ -13,16 +14,16 @@ body
     margin: 0
 
 main
-    with: 1200px
+    width: 1200px
     margin: 0 auto
     display: grid
     column-gap: 10px
-    row-gap: 10px
+    row-gap: $row-gap
     grid-template-columns: (4, 1f)
     grid-template-rows: auto
     grid-template-areas: "main-title main-title main-title main-title" "about about about about" "quote quote quote quote" "job-exp job-exp education education" "skills extracurricular extracurricular extracurricular"
 
-    h1
+    #main-title
         grid-area: main-title
         text-align: center
 
@@ -34,7 +35,6 @@ header
         display: flex
         justify-content: space-evenly
         padding: 20px
-        // z-index: 1
         a
             text-decoration: none
             color: white
@@ -115,7 +115,7 @@ header
     padding: 10px
     h2
         text-align: center
-        
+
     #extracurricular__full
         display: grid
         grid-template-columns: (2, 1f)
@@ -130,6 +130,7 @@ footer
     flex-flow: row nowrap
     justify-content: space-between
     align-items: center
+    margin-top: $row-gap
 
     #footer__social-medias
         .footer__social-medias_icons
@@ -140,6 +141,111 @@ footer
         p
             margin: 0
 
-    // #footer__copyrights
-    //     p
-    //         align-self: flex-end 
+$layout-breakpoint-small: 480px
+$width-max-small: 250px
+$font-size-small: 12px
+$font-size-title-smaill: 15px
+
+@media (max-width: $layout-breakpoint-small)
+
+    header
+        nav
+            padding: 10px
+            font-size: 10px
+    main
+        width: $width-max-small
+        column-gap: 5px
+        row-gap: $row-gap
+        grid-template-columns: (1, 1f)
+        grid-template-areas: "main-title" "about" "quote" "job-exp" "education" "skills" "extracurricular"
+
+        h1
+            font-size: $font-size-small
+
+    #about
+        flex-flow: column wrap
+        font-size: $font-size-small
+        margin: 0 auto
+
+        #about__photo
+            max-width: 120px
+            margin: 0 auto
+            border-radius: 20px
+
+        #about__text-cnt
+            max-width: 200px
+            max-height: auto
+            border-radius: 20px
+
+    #quote
+        padding: 10px 0
+        max-width: $width-max-small
+        margin: 0 auto
+        border-radius: 20px
+
+        #quote__cite
+            font-size: $font-size-title-smaill
+        p
+            font-size: $font-size-small
+
+    #job-exp
+        max-width: $width-max-small
+        margin: 0 auto
+        border-radius: 20px
+
+        h2
+            font-size: $font-size-title-smaill
+        #job-exp__experience
+            font-size: $font-size-small
+
+    #education
+        max-width: $width-max-small
+        margin: 0 auto
+        border-radius: 20px
+
+        h2
+            font-size: $font-size-title-smaill
+        h3
+            font-size: 14px
+        ul
+            font-size: $font-size-small
+
+    #skills
+        max-width: $width-max-small
+        margin: 0 auto
+        border-radius: 20px
+
+        h2
+            font-size: $font-size-title-smaill
+        h3
+            font-size: 14px
+        ul
+            font-size: $font-size-small
+
+        #skills__full
+            grid-template-columns: (1, 1f)
+            grid-template-areas: "skills__back" "skills__front" "skills__others"
+
+    #extracurricular
+        max-width: 250px
+        margin: 0 auto
+        padding: 5px
+        font-size: $font-size-small
+        border-radius: 20px
+
+        h2
+            font-size: $font-size-title-smaill
+        h3
+            text-align: center
+            font-size: 14px
+
+        #extracurricular__full
+            grid-template-columns: (1, 1f)
+            grid-template-areas: "extracurricular__curso01" "extracurricular__curso02"
+
+    footer
+        padding: 5px
+        flex-flow: column wrap
+        align-items: center
+        margin-top: $row-gap
+        font-size: $font-size-small
