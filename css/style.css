@@ -154,7 +154,7 @@ footer #footer__email p {
 
 @media (max-width: 480px) {
   html {
-    scroll-padding-top: 50px;
+    scroll-padding-top: 53px;
   }
 
   header nav {
