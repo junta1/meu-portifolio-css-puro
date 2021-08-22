@@ -263,7 +263,7 @@ footer #footer__email p {
   }
 
   footer {
-    padding: 5px;
+    padding: 20px;
     flex-flow: column wrap;
     align-items: center;
     margin-top: 10px;
