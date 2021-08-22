@@ -41,6 +41,7 @@ header nav a {
 #about {
   grid-area: about;
   display: flex;
+  margin: 0 auto;
 }
 #about #about__photo {
   max-width: 200px;
