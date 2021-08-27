@@ -17,9 +17,9 @@ Tecnologia usada: HTML, CSS e Pré-processador SASS.
 
 Tecnologia | Portrait | Landscape
 -----------| -------- | ---------
-Desktop | > 768px |
-Tablet | < 768px | Pending..
-Mobile | < 480px | Pending..
+Desktop | **>** 768px |
+Tablet | **<** 768px | Pending..
+Mobile | **<** 480px | Pending..
 
 
 Link: https://junta1.github.io/meu-portifolio-css-puro/
