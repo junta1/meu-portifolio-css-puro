@@ -252,8 +252,8 @@ $font-size-small: 16px
 $layout-breakpoint-medium: 768px
 $layout-breakpoint-minimum-medium: 481px
 $width-max-medium: 480px
-$font-size-title-medium: 18px
-$font-size-sub-title-medium: 17px
+// $font-size-title-medium: 18px
+// $font-size-sub-title-medium: 17px
 $font-size-medium: 25px
 $border-radius-medium: 20px
 
@@ -292,6 +292,52 @@ $border-radius-medium: 20px
 
         #extracurricular
             border-radius: $border-radius-medium
-        
+
+    #footer
+        flex-flow: column nowrap
+
+$layout-breakpoint-large: 1024px
+$layout-breakpoint-minimum-large: 761px
+$width-max-large: 480px
+// $font-size-title-large: 18px
+// $font-size-sub-title-large: 17px
+$font-size-large: 25px
+$border-radius-large: 20px
+@media (min-width: $layout-breakpoint-minimum-large) and (max-width: $layout-breakpoint-large)
+
+    html
+        scroll-padding-top: 65px
+    main
+        max-width: $width-max-large
+        grid-template-areas: "main-title" "about" "quote" "job-exp" "education" "skills" "extracurricular"
+
+        h1
+            font-size: $font-size-large
+
+        #about
+            #about__photo
+                max-width: 170px
+                border-top-left-radius: $border-radius-large
+                border-bottom-left-radius: $border-radius-large
+            #about__text
+                border-top-right-radius: $border-radius-large
+                border-bottom-right-radius: $border-radius-large
+        #quote
+            border-radius: $border-radius-large
+            #quote__cite
+                font-size: 1.2em
+
+        #job-exp
+            border-radius: $border-radius-large
+
+        #education
+            border-radius: $border-radius-large
+
+        #skills
+            border-radius: $border-radius-large
+
+        #extracurricular
+            border-radius: $border-radius-large
+
     #footer
         flex-flow: column nowrap

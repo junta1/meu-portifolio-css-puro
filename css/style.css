@@ -314,5 +314,49 @@ footer #footer__email p {
     flex-flow: column nowrap;
   }
 }
+@media (min-width: 761px) and (max-width: 1024px) {
+  html {
+    scroll-padding-top: 65px;
+  }
+
+  main {
+    max-width: 480px;
+    grid-template-areas: "main-title" "about" "quote" "job-exp" "education" "skills" "extracurricular";
+  }
+  main h1 {
+    font-size: 25px;
+  }
+  main #about #about__photo {
+    max-width: 170px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  main #about #about__text {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  main #quote {
+    border-radius: 20px;
+  }
+  main #quote #quote__cite {
+    font-size: 1.2em;
+  }
+  main #job-exp {
+    border-radius: 20px;
+  }
+  main #education {
+    border-radius: 20px;
+  }
+  main #skills {
+    border-radius: 20px;
+  }
+  main #extracurricular {
+    border-radius: 20px;
+  }
+
+  #footer {
+    flex-flow: column nowrap;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

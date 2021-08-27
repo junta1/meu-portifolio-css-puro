@@ -4,10 +4,22 @@ Este portifólio foi criado para divulgar sobre minha vida profissioal.
 Tecnologia usada: HTML, CSS e Pré-processador SASS.
 
 ## Reponsividade em construção!
-### Desktop: > 1200px OK!
+### Desktop/Notebooks/Tvs: 
+* > 1200px OK!
+* > 768px OK!
 ### Mobile: 
-#### portrait: < 480px OK! / landscape: Pending..
+* Portrait: < 480px OK!
+* Landscape: Pending..
 ### Tablet:
-#### portrait: < 768px OK! / landscape: Pending..
+* Portrait: < 768px OK!
+* Landscape: Pending..
+
+
+Tecnologia             | Portrait   | Landscape
+---------------------- | -------    |
+Desktop/Notebooks/Tvs  | > 768px    |   ---
+Tablet                 | < 768px    | Pending..
+Mobile                 | < 480px    | Pending..
+
 
 Link: https://junta1.github.io/meu-portifolio-css-puro/
